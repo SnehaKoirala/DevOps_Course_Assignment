@@ -33,3 +33,10 @@ build/
 .vscode/
 
 .codegpt
+
+### tar files ###
+# Ignore tar files
+*.tar
+*.tar.gz
+*.tgz
+*.jar
