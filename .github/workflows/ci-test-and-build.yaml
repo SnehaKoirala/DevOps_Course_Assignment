@@ -1,8 +1,9 @@
-name: CI
+name: CI 
 
 on:
   # Manually trigger workflow runs
   workflow_dispatch:
+
 
   # Trigger the workflow on push to the main branch
   push:
@@ -82,3 +83,4 @@ jobs:
         run: docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
          
          
+

@@ -1,7 +1,6 @@
 package via.doc1.spring_boot_docker_app1.ControllerTest;
 
-import static org.assertj.core.api.Assertions.assertThat; 
-
+import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,7 @@ import org.springframework.http.*;
 import via.doc1.spring_boot_docker_app1.model.Department;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class DepartmentControllerTest {
+public class DepartmentControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
@@ -21,7 +20,7 @@ class DepartmentControllerTest {
     void testPrintSomething() {
         String response = restTemplate.getForObject("/", String.class);
         assertThat(response).contains("Hello World");
-    } 
+    }
 
     @Test
     void testGetAllDepartments() {

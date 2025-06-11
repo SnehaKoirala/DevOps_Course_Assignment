@@ -10,8 +10,8 @@ spec:
     app: viatab-frontend  # Matches the label of the frontend deployment
   ports:
     - protocol: TCP
-      port: 80  # Expose port 80 for the frontend service
-      targetPort: 80  # Port exposed by the container
+      port: 8080 # Expose port 8080 for the frontend service
+      targetPort: 8080  # Port exposed by the container
   type: NodePort  # Expose externally when using Minikube
 
 ---
